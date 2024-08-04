@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Image-gallery img{
+  width: 20vw;
+  border-radius: 7px;
+
+}
+.image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Image-gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 60px;
+  row-gap: 20px;
+
+}
+h1{
+  text-align: center;
+  margin: 20px;
+}
+@media screen and (max-width:1000px) {
+  .Image-gallery img{
+    width: 40vw;
+    border-radius: 7px;
+  
+  }
+  .Image-gallery{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  
+}
